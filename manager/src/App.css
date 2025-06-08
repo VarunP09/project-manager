@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+.Content{
+  height: 100vw;
+  background-color: #1F2833;
+}
+.Tab{
+  display: none;
+}
+.ActiveTab{
+  display: block;
+}
+
+
+
