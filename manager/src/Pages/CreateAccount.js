@@ -18,11 +18,19 @@ export default function CreateAccount() {
 }
 
 function handleSubmit(){
-  const username = document.querySelector('.createAcctInput[type="text"]').value;
-  const password = document.querySelector('.createAcctInput[type="password"]').value;
+  const username = document.querySelector('.createAcctInput[type="text"]');
+  const password = document.querySelector('.createAcctInput[type="password"]');
 
-  if(username && password){
-    createNewUser(username, password);
+  if(username.value && password.value){
+    createNewUser(username.value, password.value);
+    username.value = '';
+    password.value = '';
+    sleep(2000);
+    window.location.pathname = '/login';
   }
   else alert("Please Enter A Uername And Password");
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
