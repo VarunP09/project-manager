@@ -50,6 +50,9 @@
 .newAccount{
     font-size: 15px;
     margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    color: #66FCF1;
 }
 .newAccount:hover{
     text-decoration: underline;

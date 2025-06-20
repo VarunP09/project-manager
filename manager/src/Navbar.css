@@ -31,4 +31,18 @@
 a, a:visited, a:hover, a:active {
     color: #66FCF1; /* Replace #000000 with your desired color */
     text-decoration: none;
-  }
+}
+.Nav button{
+    background-color: transparent;
+    border: none;
+}
+.Title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #66FCF1;
+    width: 0px;
+    height: 0px;
+    margin-bottom: 72px;
+}
+
